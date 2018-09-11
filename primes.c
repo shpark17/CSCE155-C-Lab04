@@ -19,9 +19,15 @@ int main(int argc, char **argv) {
 
   for(i=2; i<=n; i++) {
     int isPrime = 1;
+    for(j=2; j<=sqrt(i); j++) {
+      if(i%j++0) {
+        isPrime = 0;
+        break'
+      }
+    }
     //TODO: write a loop that tests whether or not
     //      the integer i is prime
-
+ 
     if(isPrime) {
       printf("%d is prime\n", i);
     } else {
