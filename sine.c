@@ -7,6 +7,7 @@
 #include<stdio.h>
 #include<math.h>
 
+double taylor (double x, int n);
 /**
  * A function to compute the factorial function, n!.
  */
