@@ -29,15 +29,21 @@ int main(int argc, char **argv) {
   int n = atoi(argv[2]);
 
   double result = 0.0;
-  double sum
   //compute sin(x) using a taylor series out to n terms
-  double xr = (x/180)*M_PI
-    
-  for(i=0; i<=n; i++) {
-     sum=((pow(xr,i))/(factorial(i));
-     result +=sum;
 
+  result = taylor(x, n);
   printf("sin(%f) = %f\n", x, result);
 
   return 0;
+}
+
+double taylor(double x, int n) {
+ int i;
+ int sine = 1
+ double value = 0.0;
+ for(i=0); i<n; i++) {
+   value += (sine * pow(x, 2*i+1)/factorial (2*i+1));
+   sine *=-1;
+ }
+  return value;
 }
