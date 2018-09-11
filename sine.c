@@ -8,6 +8,7 @@
 #include<math.h>
 
 double taylor (double x, int n);
+double value;
 /**
  * A function to compute the factorial function, n!.
  */
@@ -40,10 +41,9 @@ int main(int argc, char **argv) {
 
 double taylor(double x, int n) {
  int i;
- int sine = 1
- double value
+ int sine = 1;
  double value = 0.0;
- for(i=0; i<n; i++;) {
+ for(i=0; i<n; i++) {
    value += (sine * pow(x, 2*i+1)/factorial (2*i+1));
    sine *=-1;
  }
